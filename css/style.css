@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-position: center;
+    background-origin: unset;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 650px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Nunito', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    color: dimgray;
+    font-weight: lighter !important;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#save {
+    background-color: #fff;
+    border-color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-top: 20px;
+    box-shadow: rgba(118, 143, 255, 0.178) 0px 16px 24px 0px;
+    color: rgb(77, 77, 77);
+}
+
+select {
+    margin: 1px;
+}
+
+button {
+    margin: 1px;
+    border: 1px none #999 !important;
+    cursor: pointer;
+    font-family: 'Nunito', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    
+}
