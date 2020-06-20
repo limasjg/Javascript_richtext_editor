@@ -24,7 +24,28 @@ var CDEditor = function (textarea) {
 
     this.save = function () {
         textareaSource.value = CDEditorIframe.document.body.innerHTML;
-    };
+        var textBLOB = new Blob([textareaSource.value = CDEditorIframe.document.body.innerHTML], {type:"text/plain"});
+        var fileName = prompt("Digite o nome do arquivo: ");
+        var link = document.createElement("a");
+        link.download = fileName;
+        link.innerHTML = "Download Arquivo";
+        if (window.URL != null) {
+            link.href = window.URL.createObjectURL(textBLOB);
+        } else {
+            link.href = window.URL.createObjectURL(textBLOB);
+            link.onclick = destroy;
+            link.style.display = "none";
+            document.body.appendChild(link);
+        }
+
+        link.click();
+
+    }
+
+    function destroy(e) {
+        document.body.removeChild(e.target);
+    }
+
 
     var Component = function (commandName, element, event) {
         this.commandName = commandName;
