@@ -45,7 +45,7 @@ h1 {
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     margin-top: 20px;
-    box-shadow: rgba(118, 143, 255, 0.178) 0px 16px 24px 0px;
+    box-shadow: rgba(118, 143, 255, 0.178) 0px 4px 6px 0px;
     color: rgb(77, 77, 77);
 }
 
@@ -59,4 +59,8 @@ button {
     cursor: pointer;
     font-family: 'Nunito', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
     
+}
+
+button:hover {
+    border: none;
 }
